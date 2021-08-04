@@ -62,7 +62,7 @@ def drawLoadButtons():
     loadSurface.fill(WHITE)
     height=20
     margin=5
-    font = pygame.font.SysFont('arialttf', height)
+    font = pygame.font.Font('./freesansbold.ttf', height)
     img_length = font.render('Length:', True, BLACK)
     img_thickness = font.render('Thickness:', True, BLACK)
     img_treatment = font.render('Treatment:', True, BLACK)
@@ -114,7 +114,7 @@ def drawLoadButtons():
     loadSurface.blit(img_length, (width_texts + width_numbers + margin + margin, 0))
     loadSurface.blit(img_thickness, (width_texts + width_numbers + margin + margin, height+margin))
 
-    img = pygame.font.SysFont('arialttf', 30).render('Clear', True, BLACK)
+    img = pygame.font.Font('./freesansbold.ttf', 30).render('Clear', True, BLACK)
     clearButtonW, clearButtonH = img.get_size()
     clearButtonX = MAP_SIZE - clearButtonW - 10
     clearButtonY = (WINDOW_HEIGHT - MAP_SIZE - clearButtonH) / 2
@@ -125,7 +125,7 @@ def drawLoadButtons():
 
 def drawScaleButtons():
     scaleSurface.fill(WHITE)
-    font = pygame.font.SysFont('arialttf', 30)
+    font = pygame.font.Font('./freesansbold.ttf', 30)
     img = font.render('Zoom', True, BLACK)
     scaleSurface.blit(img, ((MAP_SIZE - img.get_width()) / 2, 0))
     x, y, w, h = MAP_SIZE / 2 - 10 - 40, 40, 40, 40
@@ -346,6 +346,7 @@ def main(model_path='saved_models/unet_pattern_to_K'):
     integration_weights = calculate_integration_weights()
 
     pygame.init()
+    pygame.font.init()
     FPS_CLOCK = pygame.time.Clock()
     displaySurface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))#, RESIZABLE)
     pygame.display.set_caption('Shot-peening')
