@@ -1,5 +1,5 @@
 # shot-peening-viewer
-
+read the end for instructions on how to laucnch the app as an exe file
 ## Configuration
 
 The interface is designed to work with Python 3.7.6 and these packages:
@@ -48,3 +48,6 @@ If it is not the case, here is the result of my pip3 freeze in my virtual enviro
 In the root, you can either launch the Python file shot-peening-viewer, or the Notebook file notebook-shot-peening-viewer.
 
 In the Notebook there are instructions to install the required packages.
+
+To install the app you need to go on the release section in Github and download the one compatible with your operating system. It needs to be saved
+in the same repository where you have all the files from the github repository.
