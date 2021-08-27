@@ -49,5 +49,7 @@ In the root, you can either launch the Python file shot-peening-viewer, or the N
 
 In the Notebook there are instructions to install the required packages.
 
-To install the app you need to go on the release section in Github and download the one compatible with your operating system. It needs to be saved
-in the same repository where you have all the files from the github repository.
+You have to clone the repository and push so you can generate the exe files.
+Once you've pushed the code you can go in actions and see the executable file being generated.
+To install the app you need to go on the release section in Github and download the one compatible with your operating system.
+It needs to be saved in the same repository where you have all the files from the github repository.
